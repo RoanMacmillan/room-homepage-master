@@ -49,6 +49,18 @@ nextBtn.addEventListener('click', () => {
 
 })
 
+document.addEventListener('keydown', function(event) {
+
+    if(event.keyCode == 37) {
+        plusSlides(-1)
+    }
+    else if(event.keyCode == 39) {
+        plusSlides(1)
+    }
+
+
+})
+
 
 
 const hamburgerBtn = document.querySelectorAll('.hamburger');

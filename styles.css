@@ -150,7 +150,6 @@ h2 {
 
 .mySlides {
     
-    display: none;
     padding: 0;
     margin: 0;
 }
@@ -208,9 +207,12 @@ h2 {
 }
 
 
+.desktop {
 
+    display: none;
+}
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 500px) {
 
     #mobile-nav, #mobile-menu {
 
@@ -228,7 +230,7 @@ h2 {
         flex-direction: row;
         width: 100%;
         justify-content: flex-start;
-        gap: 50px;
+        gap: 40px;
     }
 
     .links-container {
@@ -240,20 +242,19 @@ h2 {
 
         color: white;
         margin: 0;
-        margin-right: 50px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        margin-right: 40px;
+        padding-bottom: 7px;
     }
 
     a:hover {
 
         cursor: pointer;
-        border-bottom: 1px solid white;
+        border-bottom: 2px solid white;
     }
 
     .logo {
 
-        margin-left: 50px;
+        margin-left: 27px;
     }
 
     .myDescs .shop-container:hover {
@@ -263,4 +264,235 @@ h2 {
         transition: .2s;
     }
 
+    .mobile {
+
+        display: none;
+    }
+
+    .desktop {
+
+        display: flex;
+    }
+
+    .next, .prev {
+        
+        height: 25px;
+        width: 15px;
+        padding: 25px 33px 25px 33px;
+    }
+
+    
+.btn-container {
+
+        right: 0px;
+        bottom: 0px;
+        width: 165px;
+        height: 75px;
+    }
+    
+}
+
+
+@media screen and (min-width: 1186px) {
+
+
+    
+
+    .top-container {
+
+        display: flex;
+    }
+
+    .btn-container {
+
+        right: 0px;
+        bottom: -74px;
+        width: 165px;
+        height: 75px;
+    }
+    
+    .next, .prev {
+        
+        height: 25px;
+        width: 15px;
+        padding: 25px 33px 25px 33px;
+    }
+
+    .bottom-container {
+
+        display: flex;
+        height: 266px;
+        justify-content: space-between;
+
+    }
+
+    
+    main {
+
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #top-right {
+
+        width: 58%;
+    }
+
+    #desc-container {
+
+        width: 42%;
+        
+        
+        
+
+    }
+
+    .heading-container {
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        
+        
+    }
+
+    h1, p {
+
+        margin-top: 0;
+    }
+
+    h1 {
+
+        font-size: 3.5em;
+        margin-bottom: 15px !important;
+    }
+
+    h2 {
+
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+
+    p {
+
+        font-size: 1.3em;
+        line-height: 23px;
+        margin: 0 !important;
+        
+    }
+
+    span {
+
+        font-size: 1.4em !important;
+        font-weight: 600;
+        
+    }
+
+    .myDescs {
+
+        margin-left: 100px;
+        margin-right: 100px;
+        
+        
+    }
+
+    .about {
+
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    
+
+    .heading-container, .image-container {
+
+        padding: 0;
+        
+    }
+
+    #light {
+
+        width: 440px;
+    }
+
+    #dark {
+
+        width: 420px;
+
+    }
+    
+    #second-heading-container {
+
+        width: 40%;
+    }
+
+    .image-container img {
+
+        display: none;
+    }
+
+    .image-container:first-child {
+
+        background-image: url('./images/image-about-dark.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .image-container:last-child {
+
+        background-image: url('./images/image-about-light.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+
+    #second-heading-container {
+
+    }
+
+
+    .logo {
+
+        margin-left: 50px;
+    }
+
+    .nav-container {
+
+        padding-top: 60px;
+    }
+    
+    
+}
+
+
+@media screen and (min-width: 1440px) {
+
+
+    .btn-container {
+
+        right: -165px;
+        width: 165px;
+        height: 75px;
+        bottom: 0;
+    }
+
+
+    main {
+
+        display: flex;
+        justify-content: unset;
+
+    }
+
+    .myDescs {
+
+        margin-bottom: 50px;
+    }
 }
